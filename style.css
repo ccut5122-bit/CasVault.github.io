@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42d392, #ffcc70);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+h1 { margin: 0; font-size: 2em; }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover { color: #00ffff; }
+
+.hero { margin-top: 50px; padding: 50px; }
+
+.telegram-link, .contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.telegram-link:hover, .contact-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.1);
+}
+
+.glow-icon {
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0 0 10px cyan);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { filter: drop-shadow(0 0 10px cyan); }
+  to { filter: drop-shadow(0 0 20px white); }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+  font-size: 0.9em;
+  color: #00ffff;
+  font-weight: 600;
+}
